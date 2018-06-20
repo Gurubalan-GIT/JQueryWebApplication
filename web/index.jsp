@@ -1,9 +1,7 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Gurubalan
+  Author: Gurubalan
   Date: 20-06-2018
   Time: 17:26
-  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -14,14 +12,11 @@
   <body>
   <script type="text/javascript">
       $(document).ready(function(){
-          $("#msgid").html("This is Hello World by JQuery");
+          $("#message").html("This is Hello World by JQuery");
       });
-
   </script>
-
   This is Hello World by HTML
-
-  <div id="msgid">
+  <div id="message">
   </div>
   </body>
 </html>
