@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("#message").html("This is Hello World by JQuery");
+    $("#message").html("Success");
 });

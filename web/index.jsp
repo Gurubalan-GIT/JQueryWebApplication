@@ -11,7 +11,7 @@
       <script src="jQuery.js"></script>
   </head>
   <body>
-  This is Hello World by HTML
+  Html text.
   <div id="message">
   </div>
   </body>
