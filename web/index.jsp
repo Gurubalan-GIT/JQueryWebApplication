@@ -11,8 +11,12 @@
       <script src="jQuery.js"></script>
   </head>
   <body>
-  Html text.
-  <div id="message">
+  <div id="id-div1">
+      <h1>This is a heading.</h1>
   </div>
+  <div id="id-div2">
+      <h1>This is another heading.</h1>
+  </div>
+  <button id="id-button">Click here to hide heading.</button>
   </body>
 </html>

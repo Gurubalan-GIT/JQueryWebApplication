@@ -1,3 +1,5 @@
 $(document).ready(function(){
-    $("#message").html("Success");
+    $("#id-button").click(function () {
+        $("div").hide();
+    })
 });
