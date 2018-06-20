@@ -8,13 +8,9 @@
   <head>
     <title>JQueryWebApp</title>
       <script type="text/javascript" src="http_code.jquery.com_jquery-3.3.1.js"></script>
+      <script src="jQuery.js"></script>
   </head>
   <body>
-  <script type="text/javascript">
-      $(document).ready(function(){
-          $("#message").html("This is Hello World by JQuery");
-      });
-  </script>
   This is Hello World by HTML
   <div id="message">
   </div>
