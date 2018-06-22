@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        String fn = req.getParameter("fn");
+        /*String fn = req.getParameter("fn");
         String ln = req.getParameter("ln");
         String un = req.getParameter("un");
         String pass = req.getParameter("pass");
@@ -23,6 +23,9 @@ public class Servlet extends HttpServlet {
             out.print("<html><body><h1>Success!</h1></body></html>  ");
         }catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
+        String fn=req.getParameter("fn");
+        PrintWriter out=res.getWriter();
+        out.print(fn);
     }
 }
