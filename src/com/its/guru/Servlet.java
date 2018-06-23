@@ -1,7 +1,6 @@
 package com.its.guru;
 
-import netscape.javascript.JSObject;
-
+import net.sf.json.JSONObject;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +12,10 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         String fn=req.getParameter("fn");
+        JSONObject jsonObject=new JSONObject();
+        jsonObject.put("FN",fn);
+        res.setContentType("application/json");
         PrintWriter out=res.getWriter();
-        out.print(fn);
+        out.print(jsonObject);
     }
 }
