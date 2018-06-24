@@ -1,4 +1,4 @@
-$(document).ready(function (){
+/*$(document).ready(function (){
     $('#id-button1').click(function (){
         var x=$('#id-fn').val();
         $.ajax({
@@ -11,3 +11,4 @@ $(document).ready(function (){
         })
     })
 });
+*/
