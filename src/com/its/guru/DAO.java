@@ -4,12 +4,13 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
 public class DAO {
-    public void addUser(String fn,String ln,String un,String pass,String address,String gender) {
+    public void addUser(String email,String password) {
         try {
             Session session = HibernateUtil.getSessionFactory().openSession();
             session.beginTransaction();
             EntityClass entityClass = new EntityClass();
-            entityClass.setPassword(pass);
+            entityClass.setEmail(email);
+            entityClass.setPassword(password);
             session.save(entityClass);
             session.getTransaction().commit();
             HibernateUtil.shutdown();
