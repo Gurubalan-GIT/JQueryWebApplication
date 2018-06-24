@@ -12,11 +12,7 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         String fn=req.getParameter("fn");
-        //From Json-lib-2.4
-        JSONObject jsonObject=new JSONObject();
-        jsonObject.put("FN",fn);
-        res.setContentType("application/json");
         PrintWriter out=res.getWriter();
-        out.print(jsonObject);
+        out.print(fn);
     }
 }

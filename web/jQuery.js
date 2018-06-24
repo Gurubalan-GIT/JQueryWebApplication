@@ -5,9 +5,8 @@ $(document).ready(function (){
             url:'Servlet',
             type:'post',
             data:{fn:x},
-            dataType:'json',
             success: function (data){
-                $('#id-ajaxresponse').text(data.fn);
+                $('#id-ajaxresponse').text(data);
             }
         })
     })
