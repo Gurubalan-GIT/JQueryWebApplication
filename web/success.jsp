@@ -1,7 +1,4 @@
-<%@ page import="com.its.guru.EntityClass" %>
 <%@ page import="java.io.PrintWriter" %>
-<%@ page import="com.its.guru.Servlet" %>
-<%@ page import="com.its.guru.DAO" %>
 <%--
   Created by IntelliJ IDEA.
   User: Gurubalan
