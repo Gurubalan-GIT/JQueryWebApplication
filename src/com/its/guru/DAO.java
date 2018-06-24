@@ -9,12 +9,7 @@ public class DAO {
             Session session = HibernateUtil.getSessionFactory().openSession();
             session.beginTransaction();
             EntityClass entityClass = new EntityClass();
-            entityClass.setFirstName(fn);
-            entityClass.setLastName(ln);
-            entityClass.setUsername(un);
             entityClass.setPassword(pass);
-            entityClass.setAddress(address);
-            entityClass.setGender(gender);
             session.save(entityClass);
             session.getTransaction().commit();
             HibernateUtil.shutdown();
