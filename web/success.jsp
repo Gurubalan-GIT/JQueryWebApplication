@@ -18,12 +18,11 @@
 </head>
 <body>
     <div class="text-center">
-        Success!
         <%
             String email=(String) session.getAttribute("email");
             PrintWriter output=response.getWriter();
-            output.print(email);
         %>
+        Success! <%output.print(email);%>
     </div>
 </body>
 </html>
