@@ -22,7 +22,16 @@
             String email=(String) session.getAttribute("email");
             PrintWriter output=response.getWriter();
         %>
-        Success! <% output.print(email); %>
-    </div>
-</body>
-</html>
+       <!-- <div class="row">
+            <div class="col-sm-6">
+
+           </div>
+            <div class="col-sm-6">
+
+                 </div>
+
+          </div>-->
+  success&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=email%>
+      </div>
+  </body>
+  </html>
